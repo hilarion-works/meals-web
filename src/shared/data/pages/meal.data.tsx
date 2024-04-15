@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import { Card, Metric, Text, Title, BarList, Flex, Grid } from '@tremor/react';
 // import Chart from './chart';
 
-import Search from '~/components/widgets/search';
+import Search from '~/components/widgets/Search';
 
 let meals = [
   {
