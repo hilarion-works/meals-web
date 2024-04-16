@@ -1,4 +1,4 @@
-// File: /Users/hilarion/Documents/hilarion/porto/works/meals-web/app/(pages)/contact/page.tsx
+// File: /home/ubuntu/web/meals-web/app/(pages)/contact/page.tsx
 import * as entry from '../../../../../app/(pages)/contact/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

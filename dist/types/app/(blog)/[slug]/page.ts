@@ -1,4 +1,4 @@
-// File: /Users/hilarion/Documents/hilarion/porto/works/meals-web/app/(blog)/[slug]/page.jsx
+// File: /home/ubuntu/web/meals-web/app/(blog)/[slug]/page.jsx
 import * as entry from '../../../../../app/(blog)/[slug]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
