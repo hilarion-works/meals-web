@@ -114,7 +114,9 @@ export const MealList = () => {
       <Search keyword={ keyword} updateKeyword={updateKeyword} />
       <Grid numItemsSm={4} numItemsLg={4} className="gap-6">
         {
-          newMeals.map((item, i) => {
+            newMeals !== null && newMeals !== undefined && newMeals.length > 0
+              ? 
+              newMeals.map((item, i) => {
             return (
               <Card key={item.idMeal} className='border-solid border-2 border-sky-500 rounded-md'>
                 <Title className='font-bold text-lg'>{item.strMeal}</Title>
@@ -210,7 +212,9 @@ export const MealList = () => {
               </Card>
               
             )
-          })
+              })
+              : 
+              <div></div>
         }
         </Grid>
       {/* <Chart /> */}
