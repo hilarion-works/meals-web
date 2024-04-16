@@ -4,3 +4,4 @@ node_modules
 .github
 .changeset
 package-lock.json
+dist
