@@ -74,7 +74,7 @@ const urlMeals = "https://themealdb.com/api/json/v1/1";
 // export const mealList: MealProps = () => {
 export const MealDetail = () => {  
   const [keyword, setKeyword] = useState("");
-  const [newMeals, setMeals] = useState([])
+  const [newMeals, setMeals] = useState(meals)
   const params = useParams()
 
   const getMeal = async () => {
@@ -107,7 +107,7 @@ export const MealDetail = () => {
       <div></div>
       <Grid numItemsSm={1} numItemsLg={1} className="gap-6">
         {
-            newMeals !== null && newMeals !== undefined && newMeals.length > 0
+            newMeals !== null && newMeals !== undefined && newMeals.length > 1
               ? 
               newMeals.map((item, i) => {
             return (
