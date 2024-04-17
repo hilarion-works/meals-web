@@ -13,56 +13,56 @@ import Search from '~/components/widgets/Search';
 
 let meals = [
   {
-    idMeal: "52772",
-    strMeal: "Teriyaki Chicken Casserole",
+    idMeal: "",
+    strMeal: "",
     strDrinkAlternate: null,
-    strCategory: "Chicken",
-    strArea: "Japanese",
-    strInstructions: "Preheat oven to 350° F. Spray a 9x13-inch baking pan with non-stick spray.\r\nCombine soy sauce, ½ cup water, brown sugar, ginger and garlic in a small saucepan and cover. Bring to a boil over medium heat. Remove lid and cook for one minute once boiling.\r\nMeanwhile, stir together the corn starch and 2 tablespoons of water in a separate dish until smooth. Once sauce is boiling, add mixture to the saucepan and stir to combine. Cook until the sauce starts to thicken then remove from heat.\r\nPlace the chicken breasts in the prepared pan. Pour one cup of the sauce over top of chicken. Place chicken in oven and bake 35 minutes or until cooked through. Remove from oven and shred chicken in the dish using two forks.\r\n*Meanwhile, steam or cook the vegetables according to package directions.\r\nAdd the cooked vegetables and rice to the casserole dish with the chicken. Add most of the remaining sauce, reserving a bit to drizzle over the top when serving. Gently toss everything together in the casserole dish until combined. Return to oven and cook 15 minutes. Remove from oven and let stand 5 minutes before serving. Drizzle each serving with remaining sauce. Enjoy!",
-    strMealThumb: "https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg",
-    strTags: "Meat,Casserole",
-    strYoutube: "https://www.youtube.com/watch?v=4aZr5hZXP_s",
-    strIngredient1: "soy sauce",
-    strIngredient2: "water",
-    strIngredient3: "brown sugar",
-    strIngredient4: "ground ginger",
-    strIngredient5: "minced garlic",
-    strIngredient6: "cornstarch",
-    strIngredient7: "chicken breasts",
-    strIngredient8: "stir-fry vegetables",
-    strIngredient9: "brown rice",
+    strCategory: "",
+    strArea: "",
+    strInstructions: "",
+    strMealThumb: "",
+    strTags: "",
+    strYoutube: "",
+    strIngredient1: "",
+    strIngredient2: "",
+    strIngredient3: "",
+    strIngredient4: "",
+    strIngredient5: "",
+    strIngredient6: "",
+    strIngredient7: "",
+    strIngredient8: "",
+    strIngredient9: "",
     strIngredient10: "",
     strIngredient11: "",
     strIngredient12: "",
     strIngredient13: "",
     strIngredient14: "",
     strIngredient15: "",
-    strIngredient16: null,
-    strIngredient17: null,
-    strIngredient18: null,
-    strIngredient19: null,
-    strIngredient20: null,
-    strMeasure1: "3/4 cup",
-    strMeasure2: "1/2 cup",
-    strMeasure3: "1/4 cup",
-    strMeasure4: "1/2 teaspoon",
-    strMeasure5: "1/2 teaspoon",
-    strMeasure6: "4 Tablespoons",
-    strMeasure7: "2",
-    strMeasure8: "1 (12 oz.)",
-    strMeasure9: "3 cups",
+    strIngredient16: "",
+    strIngredient17: "",
+    strIngredient18: "",
+    strIngredient19: "",
+    strIngredient20: "",
+    strMeasure1: "",
+    strMeasure2: "",
+    strMeasure3: "",
+    strMeasure4: "",
+    strMeasure5: "",
+    strMeasure6: "",
+    strMeasure7: "",
+    strMeasure8: "",
+    strMeasure9: "",
     strMeasure10: "",
     strMeasure11: "",
     strMeasure12: "",
     strMeasure13: "",
     strMeasure14: "",
     strMeasure15: "",
-    strMeasure16: null,
-    strMeasure17: null,
-    strMeasure18: null,
-    strMeasure19: null,
-    strMeasure20: null,
-    strSource: null,
+    strMeasure16: "",
+    strMeasure17: "",
+    strMeasure18: "",
+    strMeasure19: "",
+    strMeasure20: "",
+    strSource: "",
     strImageSource: null,
     strCreativeCommonsConfirmed: null,
     dateModified: null
@@ -107,7 +107,7 @@ export const MealDetail = () => {
       <div></div>
       <Grid numItemsSm={1} numItemsLg={1} className="gap-6">
         {
-            newMeals !== null && newMeals !== undefined && newMeals.length > 1
+            newMeals !== null && newMeals !== undefined && newMeals.length > 0
               ? 
               newMeals.map((item, i) => {
             return (
@@ -131,7 +131,7 @@ export const MealDetail = () => {
                       <Text className="text-left mt-6">Category: {item.strCategory}</Text>
                       <Text className="text-left mt-2">Tags: {item.strTags}</Text>
                       <Text className="text-left mt-2">Link Youtube:
-                        <a className='italic text-cyan-600' href={item.strYoutube}> here</a>
+                      <a className='italic text-cyan-600' href={item.strYoutube}>{item.strYoutube.length > 0 ? " here" : ""}</a>
                       </Text>
                       <Text className="text-left mt-2 mb-1">Ingredients:</Text>
                       <Text className="text-left">{item.strIngredient1 ? "- " + item.strIngredient1 : ""}</Text>
