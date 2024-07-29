@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: SITE.title,
 };
 
-export default function Page(mealId: String) {
+export default function Page() {
   return (
     <>
       <MealDetail/>
