@@ -21,7 +21,11 @@ export const metadata: Metadata = {
   title: SITE.title,
 };
 
-export default function Page() {
+export function generateStaticParams() {
+  return [{ id: '1' }, { id: '2' }, { id: '3' }]
+}
+
+export default function Page({ params }: { params: { id: string } }) {
   return (
     <>
       <MealDetail/>
