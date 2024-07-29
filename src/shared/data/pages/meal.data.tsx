@@ -109,7 +109,6 @@ export const MealList = () => {
   const ref = useRef();
   
   return (
-    <>
     <main className="p-4 md:p-10 mx-auto max-w-7xl">
       <Search keyword={ keyword} updateKeyword={updateKeyword} />
       <Grid numItemsSm={4} numItemsLg={4} className="gap-6">
@@ -233,7 +232,6 @@ export const MealList = () => {
         </Grid>
       {/* <Chart /> */}
     </main>
-    </>
   );
 };
 
